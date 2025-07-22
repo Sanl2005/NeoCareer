@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}Welcome to NeoCareer{% endblock %}
+
+{% block content %}
+<style>
+    .welcome-container {
+        text-align: center;
+        background: #ffffff;
+        padding: 3rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .welcome-container h1 {
+        color: #1877f2;
+        margin-bottom: 1rem;
+    }
+    .welcome-container p {
+        font-size: 1.1rem;
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+    }
+    .cta-button {
+        display: inline-block;
+        background-color: #1877f2;
+        color: #fff;
+        padding: 0.8rem 1.5rem;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+    .cta-button:hover {
+        background-color: #166fe5;
+    }
+</style>
+<div class="welcome-container">
+    <h1>Find Your Future with NeoCareer</h1>
+    <p>
+        Analyze your resume and academic scores to discover the perfect career path, complete with a personalized learning roadmap.
+    </p>
+    <a href="{% url 'signup' %}" class="cta-button">Get Started</a>
+</div>
+{% endblock %} 
