@@ -52,3 +52,5 @@ def signup(request):
         })
         return redirect('login')
     return render(request, 'signup.html')
+
+def dashboard():
